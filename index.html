@@ -1,13 +1,23 @@
 <!doctype html>
 <html>
 <head>
-    <title>[Title here]</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />
+  <title>Game</title>
+  <link href="media/css/game.css" rel="stylesheet" type="text/css" charset="utf-8" />
 </head>
 <body>
+
+<div id="game-container"></div>
+
+<script src="node_modules/phaser/build/custom/pixi.js"></script>
 <script src="node_modules/systemjs/dist/system.js"></script>
 <script src='system.config.js'></script>
 <script>
-  System.import("app/index");
+  System.import("app/index").then(function(module) {
+    module.default();
+  });
 </script>
 </body>
 </html>

@@ -1,6 +1,5 @@
-/** Entry point **/
-export default function main () {
-  console.log("ENTER HERE, IF YOU DARE.");
-  return "test";
-}
+import init from "app/display/init";
 
+export default function index () {
+  init();
+}

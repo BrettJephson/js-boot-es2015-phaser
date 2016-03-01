@@ -91,7 +91,7 @@ gulp.task('serve', function() {
     open: options.openParam
   });
 
-  return gulp.watch(['index.html', 'game-config.json'])
+  return gulp.watch(['index.html', 'game-settings.json'])
     .on('change', browserSync.reload)
     .on('error', function(error) {
       console.error(error);
